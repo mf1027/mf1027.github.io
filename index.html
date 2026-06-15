@@ -201,6 +201,15 @@
       border: 1px solid var(--border);
     }
     .btn-outline:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+    .btn-resume {
+      background: transparent; color: var(--gold);
+      border: 1px solid rgba(245,158,11,0.35);
+    }
+    .btn-resume:hover {
+      border-color: var(--gold); background: rgba(245,158,11,0.08);
+      transform: translateY(-2px);
+      box-shadow: 0 0 20px rgba(245,158,11,0.2);
+    }
 
     .hero-stats {
       display: flex; gap: 2.5rem; flex-wrap: wrap;
@@ -417,6 +426,15 @@
       border-color: rgba(56,189,248,0.4); transform: translateY(-3px);
       box-shadow: 0 8px 24px rgba(0,0,0,0.3);
     }
+    .contact-card--resume {
+      border-color: rgba(245,158,11,0.25);
+    }
+    .contact-card--resume:hover {
+      border-color: rgba(245,158,11,0.5);
+      box-shadow: 0 8px 24px rgba(245,158,11,0.1);
+    }
+    .contact-card--resume .contact-key { color: rgba(245,158,11,0.7); }
+    .contact-card--resume .contact-val { color: var(--gold); }
     .contact-icon { font-size: 1.3rem; }
     .contact-key { font-size: 0.7rem; color: var(--text-muted); letter-spacing: 0.05em; }
     .contact-val { font-size: 0.88rem; color: var(--text); font-weight: 500; }
@@ -512,6 +530,7 @@
     <div class="hero-cta">
       <a href="#experience" class="btn btn-primary">View My Work</a>
       <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      <a href="MichaelAngeloFerrer-Resume.pdf" download class="btn btn-resume">⬇ Download Resume</a>
     </div>
     <div class="hero-stats">
       <div>
@@ -855,6 +874,13 @@
           <div class="contact-val">Morong, Rizal, PH</div>
         </div>
       </div>
+      <a class="contact-card contact-card--resume" href="MichaelAngeloFerrer-Resume.pdf" download>
+        <div class="contact-icon">📄</div>
+        <div>
+          <div class="contact-key">RESUME</div>
+          <div class="contact-val">Download PDF</div>
+        </div>
+      </a>
     </div>
     <div class="contact-available reveal">
       <div class="avail-dot"></div>
